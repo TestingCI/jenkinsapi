@@ -20,3 +20,4 @@ script:
   - nosetests jenkinsapi_tests --with-xunit --xunit-file=shippable/testresults/nosetests.xml
    # - which python && coverage run --branch jenkinsapi_tests
     #- which python && coverage xml -o shippable/codecoverage/coverage.xml jenkinsapi_tests
+cache: true

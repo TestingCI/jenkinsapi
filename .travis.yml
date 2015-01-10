@@ -17,7 +17,7 @@ script:
   - pep8 --ignore=E501 jenkinsapi/*.py
   - pylint --rcfile=pylintrc jenkinsapi/*.py --disable R0912
  #   - nosetests jenkinsapi_tests 
-  - nosetests jenkinsapi_tests --with-coverage --cover-package=jenkinsapi_tests  --with-xunit --xunit-file=shippable/testresults/nosetests.xml
+  - nosetests jenkinsapi_tests --with-coverage --cover-package=jenkinsapi  --with-xunit --xunit-file=shippable/testresults/nosetests.xml
    # - which python && coverage run --branch jenkinsapi_tests
   - coverage xml -o shippable/codecoverage/coverage.xml 
 cache: true
